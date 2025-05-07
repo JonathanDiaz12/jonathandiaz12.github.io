@@ -18,14 +18,16 @@
              href="css/big-stylesheet.css">
 </head>
 <body>
-
-<div class="icon-bar">
+  <div class="hamburger" onclick="toggleMenu()">
+    &#9776; <!-- Unicode for hamburger icon -->
+<div class="icon-bar" id ='navMenu'>
   <a class="active" >Circuit Sorcerers</a> 
   <a href="index.html">Home</a> 
   <a href="about.html" target= "_parent">About</a> 
   <a href="sponsors.html" target ="_self">Sponsors</a>
   <a href="pictures.html">Pictures!</a>
   <a href="https://hcb.hackclub.com/donations/start/circuit-sorcerers" target= "_blank">Donate!</a> 
+  </div>
 </div>
 <br><br><br><br>
 <div class="about-us text move">
@@ -61,5 +63,11 @@ FIRST emphasizes teamwork, creativity, and "Gracious Professionalism®," encoura
         <p>Email Us! diazjonny2003@gmail.com</p>
         <p>Instagram: <a href= "https://www.instagram.com/circuitsorcerers?igshamNuZ3lsaXBqYzYy" target= "_blank">@CircuitSorcerers</a></p>
 </footer>
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("navMenu");
+    nav.classList.toggle("show");
+  }
+</script>
 </body>
 </html>
