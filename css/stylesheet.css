@@ -1,112 +1,75 @@
-@charset "UTF-8";
+/* Base Styling */
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
 
-/*
- CSS created with CSS HTML Validator for Windows
-*/
-
-body {margin:0;
-background-color: #2a2a2a;
-background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");}
-
+/* Navigation Bar */
 .icon-bar {
-  width: 100%;
-  background-color: #5E17EB;
-  overflow: auto;
-  opacity:01;
-  position:fixed;
-  
-  color:#FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #333;
+  overflow: hidden;
 }
 
 .icon-bar a {
-  float: left;
-  width: 16%;                /* Reduced from 10% to fit more icons */
+  padding: 14px 20px;
   text-align: center;
-  padding: 10px 0;           /* Reduced padding for more compact layout */
-  transition: all 0.3s ease;
-  color: #FFFFFF;
-  font-size: 18px;          /* Reduced from 24px for smaller icons */
+  color: white;
+  text-decoration: none;
+  flex-grow: 1;
+  min-width: 120px;
 }
-
 
 .icon-bar a:hover {
-  background-color: #4D06DA;
+  background-color: #111;
 }
 
-.active {
-  background-color: #5E17EB;
-}
-
-
-
+/* Responsive Containers */
 .about-us {
-display: inline flex;
-flex-direction:column;
-width: 600px;
-padding: 5px;
-margin-left: 10px;
-margin-right:10px;
-margin-top: 40px;
-color: white;
-text-align:center;
-font-size: 14pt;
-vertical-align:top;
+  padding: 20px;
+  box-sizing: border-box;
 }
+
 .text {
-    margin-top:0px;
-   
-    
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.move{
-    margin-left:25px;
-    float:left
+/* Responsive Images */
+.about-us img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
+
+/* Footer Styling */
 footer {
-    text-align:center;
-     background-color: #2A2A2A ;
-}
-.contact {
-    display: inline flex;
-    flex-direction: column;
-}
-footer p {
-    color:white;
-    font-size:14pt;
-}
-footer h1{
-    color:white;
-}
-footer a {
-    color: grey;
-}
-
-footer a:hover{
-color: lightgrey;
-}
-footer a:active{
-    color: red;
-}
-footer a:visited{
-    color:gold;
-}
-html{
-font-family:Merriweather
-}
-li {
-font-size:10pt;
-}
-
-.button {
-  background-color: #555555;
-  border: none;
-  color: white;
-  padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  padding: 20px;
+  background-color: #f4f4f4;
 }
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .icon-bar {
+    flex-direction: column;
+  }
+
+  .icon-bar a {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .text {
+    padding: 10px;
+  }
+
+  footer h1 {
+    font-size: 1.2em;
+  }
+}
