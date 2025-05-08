@@ -10,12 +10,11 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
  font-family: 'Merriweather', serif;}
 
 .icon-bar {
-  width: 100%;
+  width: 100vw;
   background-color: #5E17EB;
   overflow: auto;
   opacity:01;
   position:fixed;
-  
   color:#FFFFFF;
 }
 
@@ -26,7 +25,7 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
   padding: 10px 0;           /* Reduced padding for more compact layout */
   transition: all 0.3s ease;
   color: #FFFFFF;
-  font-size: 18px;          /* Reduced from 24px for smaller icons */
+  font-size: calc(10px + .75vw);          /* Reduced from 24px for smaller icons */
 }
 
 
@@ -43,24 +42,22 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
 .about-us {
 display: inline flex;
 flex-direction:column;
-width: 600px;
-padding: 5px;
-margin-left: 10px;
-margin-right:10px;
-margin-top: 40px;
+width: 31.25vw;
+padding: 0.26vw;
+margin-top: 2.083vw;
 color: white;
 text-align:center;
-font-size: 14pt;
+font-size: calc(10px + .40vw);
 vertical-align:top;
 }
 .text {
-    margin-top:0px;
-   
-    
+    margin-top:0px;    
 }
-
+.main {
+    width: 0px;
+}
 .move{
-    margin-left:25px;
+    margin-left:2.604vw;
     float:left
 }
 footer {
@@ -102,12 +99,12 @@ font-size:10pt;
   background-color: #555555;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 0.781vw 1.667vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 0.833vw;
+  margin: 0.208vw 0.104vw;
   cursor: pointer;
 }
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
