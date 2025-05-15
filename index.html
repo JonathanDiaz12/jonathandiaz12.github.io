@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
  <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="viewport" content="width=device-width, initial-scale= 1.0">
  <title>Circuit Sorcerers-Home</title>
   <link rel="icon" type="image/x-icon" href="Images/CircuitSorcerers.png">
  <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,18 +10,83 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href ="css/stylesheet.css">
 </head>
+
+
 <body>
-<div class="icon-bar">
-  <a class="active" >Circuit Sorcerers</a> 
-  <a href="index.html">Home</a> 
-  <a href="about.html" target= "_parent">About</a> 
-  <a href="sponsors.html" target ="_self">Sponsors</a>
-  <a href="pictures.html">Pictures!</a>
-  <a href="https://hcb.hackclub.com/donations/start/circuit-sorcerers" target= "_blank">Donate!</a> 
+
+  <!-- Navigtion Bar -->
+<nav>
+  <div class="nav-container">
+    <div class = "left-side">
+      <img src = "Images/CircuitSorcerers.png" alt= "The team logo image" aria-hidden="true" class="logo">
+      <a class = "name">Circuit Sorcerers</a>
+    </div>
+    
+    <!-- These two lines are for a toggle menu for smaller screens-->
+    <input type = "checkbox" id = "menu-toggle" class = "menu-toggle"/>
+    <label for = "menu-toggle" class = "hamburger">&#9776;</label>
+
+    <ul class = "nav-things">
+      <li class = "right-side"><a href="index.html">Home</a></li>
+      <li class = "right-side"><a href="about.html">About Us</a></li>
+      <li class = "right-side"><a href="first.html">FIRST</a></li>
+      <li class = "right-side"><a href="pictures.html">Pictures</a></li>
+      <li class = "right-side"><a href="sponsors.html">Sponsors</a></li>
+      <li class = "right-side"><a href="https://hcb.hackclub.com/donations/start/circuit-sorcerers" target= "_blank">Donate</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Home Tab: Introduce the Team -->
+<div class="intro-img">
+  <img src="Images/worlds_comp.JPG" alt="A picture of the 2022 FIRST Championship." class = "banner"/>
+  <div class = "banner-text"><h1>Who are the Circuit Sorcerers?</h1></div>
 </div>
-<br><br><br><br>
+
+<!-- Home Tab: Information Paragraph (below image)-->
+<div class = "info-section">
+  <p class = "home-info">
+    We are an enthusiastic community of students and alumni coming together to create a
+    new FIRST Robotics Competition (FRC) team, eager to explore the realm of STEM in the
+    form of hands-on learning. Our mission is to provide all members with the chance to foster
+    hands-on, real-world engineering, programming, design, and teamwork skills, preparing us
+    not only for competition, but for our futures. <br><br> What sets us apart is our creative drive: we
+    aim to inject a powerful visual presence into all we do, from our robot to our presence at
+    competitions. Now, because we are a rookie team starting in the 2026 robotics season, we don't 
+    have a lot of experience to show that we have achieved those goals mention previously. However 
+    that doesn't mean that we aren't going to try and give it our all!
+  </p>
+</div>
+
+
+<br><br><br>
+
+<!-- Footer -->
+<footer>
+  <h1>Contact Us!</h1>
+  <p><b><i>Email Us :</b> diazjonny2003@gmail.com</p>
+  <p><b><i>Instagram :</b> <a href= "https://www.instagram.com/circuitsorcerers?igshamNuZ3lsaXBqYzYy" target= "_blank">@CircuitSorcerers</a></p>
+</footer>
+
+
+
+</body>
+</html>
+
+
+<!--
+ About Us Tab 
+
 <div class="about-us text move">
-    <h2><u>What is FIRST?</u></h2>
+
+  <div class="about-us">
+    <img src = "Images/FIRST_Sign_Outside3.jpg" alt ="Student with a robot"/>
+    <div class= "center"><u>What is FIRST?</u></div>
+  </div>
+
+
+    <h2><u>What is FIRST?</u></h2> 
     <p>FIRST Robotics (For Inspiration and Recognition of Science and Technology) is an international youth organization that hosts robotics competitions designed to inspire young people to pursue science, technology, engineering, and math (STEM).
 There are several programs under the FIRST umbrella, each tailored to different age groups:
 FIRST LEGO League (FLL) – For students aged 4–16 (varies by country). Teams build and program robots using LEGO kits and solve real-world problems.
@@ -29,29 +94,3 @@ FIRST Tech Challenge (FTC) – For middle and high school students. Teams build 
 FIRST Robotics Competition (FRC) – For high school students. Teams design, build, and program industrial-sized robots to compete in a themed game, with strict rules, time limits, and limited resources.
 FIRST emphasizes teamwork, creativity, and "Gracious Professionalism®," encouraging collaboration and respect even in competitive environments.</p>
 </div>
-<div class="about-us ">
-    <img src = "Images/FIRST_Sign_Outside3.jpg" alt ="Student with a robot"/>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
-
-<div class="about-us text move">
-<h2><u>Who are the Circuit Sorcerers?</u></h2>
-  <p >
-    We are an enthusiastic community of students and alumni coming together to create a
-    new FIRST Robotics Competition (FRC) team, eager to explore the realm of STEM in the
-    form of hands-on learning. Our mission is to provide all members with the chance to foster
-    hands-on, real-world engineering, programming, design, and teamwork skills, preparing us
-    not only for competition, but for our futures. What sets us apart is our creative drive: we
-    aim to inject a powerful visual presence into all we do, from our robot to our presence at
-    competitions. Now, because we are a rookie team starting in the 2026 robotics season, we don't have a lot of experience to show that we have achieved those goals mention previously. However that doesn't mean that we aren't going to try and give it our all!
-  </p></div>
-  <div class="about-us  ">
-  <img src="Images/WorldChamps2022.jpg" alt="A picture of the 2022 FIRST Championship."/>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>    <hr>
-<footer><h1 class="contact">Contact Us!</h1>
-        <p>Email Us: diazjonny2003@gmail.com</p>
-        <p>Instagram: <a href= "https://www.instagram.com/circuitsorcerers?igshamNuZ3lsaXBqYzYy" target= "_blank">@CircuitSorcerers</a></p>
-</footer>
-</body>
-</html>
