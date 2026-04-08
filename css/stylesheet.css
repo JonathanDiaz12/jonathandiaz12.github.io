@@ -641,7 +641,7 @@ font-family:Merriweather
 
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 .text-sized-image {
-  height: 1em;   /* Scaled to match the current font size */
+  height: 5em;   /* Scaled to match the current font size */
   width: auto;   /* Maintains original aspect ratio */
   vertical-align: middle; /* Aligns the image center with text center */
 }
